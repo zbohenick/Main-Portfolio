@@ -475,7 +475,19 @@ color: var(--accent);
   
 
 
-
+  .work h2{
+    font-family: 'Palanquin', sans-serif;
+    margin-bottom: 6em;
+    line-height: 1.25;
+    font-size: .875rem;
+    font-weight: 300;
+  }
+  .work h1 {
+      font-weight: 500;
+      text-align: center;
+      font-size: 2.2rem;
+      
+  }
 
 
 
@@ -526,6 +538,19 @@ color: var(--accent);
 
 }
   @media only screen and (min-width: 40em) {
+    .work h2{
+        font-family: 'Palanquin', sans-serif;
+        margin-bottom: 6em;
+        line-height: 1.25;
+        font-size: .875rem;
+        font-weight: 300;
+      }
+      .work h1 {
+          font-weight: 500;
+          text-align: center;
+          font-size: 3rem;
+          
+      }
           #opennav {
           visibility: hidden;
           display: none;
@@ -578,6 +603,19 @@ max-width: 70%;
   
   }
   @media only screen and (min-width: 64em) {
+    .work h2{
+        font-family: 'Palanquin', sans-serif;
+        margin-bottom: 6em;
+        line-height: 1.25;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .work h1 {
+          font-weight: 500;
+          text-align: center;
+          font-size: 4rem;
+          
+      }
       header {
           position:absolute;
           background-color: white;
@@ -673,10 +711,7 @@ max-width: 55%;
     width: 1em;
     margin-left: -.7em;
   }
-  .work h2{
-    margin-bottom: 2.5em;
-    line-height: 1.25;
-  }
+
   .work {
       padding-top: 2.5em;
   }
