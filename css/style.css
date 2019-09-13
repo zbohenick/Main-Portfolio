@@ -18,6 +18,7 @@
       font-weight: 300;
       line-height: 2;
       font-family: 'Palanquin', sans-serif;
+      color: #434343;
   }
   h1,h2,h3,h4,h5 {
       font-family: 'Palanquin Dark', sans-serif;
@@ -77,6 +78,9 @@
       font-size: 1rem;
       font-weight: 700;
   }
+  #curator-feed-bronco-layout {
+      margin-top: 2em;
+  }
   
   header {
       position:fixed;
@@ -96,10 +100,14 @@
       margin-right: 1.25rem;
       background-color:white;
   }
+  .footerWrap {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
   a {
   
       text-decoration: none;
-      color: black;
+      color: #434343;
   }
   
   .nav__item a:before {
@@ -145,7 +153,43 @@
   }
   
   
-  
+  footer .left-list li{
+    float: left;
+}
+footer .nav__item--icon {
+    margin-left: 2rem;
+}
+footer .nav__item--icon i {
+    transition: .3s;
+    color: #434343;
+}
+footer .nav__item--icon:hover i{
+    color: var(--accent);
+}
+footer .right-list li{
+    color: #434343;
+    font-weight: 400;
+}
+footer .nav__item a {
+    color: #434343;
+    font-weight: 400;
+}
+footer .nav__item--icon:nth-child(1) {
+    margin-left: 0;
+}
+footer {
+    padding-top: 3em;
+    padding-bottom: 5em;
+    color: #434343;
+    background-color: rgb(247, 249, 255);
+  }
+  footer p {
+      text-align: left;
+  }
+  .footer-nav {
+      padding-top: 3em;
+  }
+
   
   
   
@@ -173,7 +217,7 @@
   
   .sidenav a, .sidenav button {
       text-decoration: none;
-      color: black;
+      color: #434343;
       display: block;
       width: auto;
       font-family: 'Palanquin Dark', sans-serif;
@@ -288,6 +332,71 @@ color: var(--accent);
     font-weight: 400;
     font-size: 2rem;
 }
+
+.intro .next-link:hover {
+    color:black;
+  }
+  .intro .next-link {
+      color: #434343;
+  }
+
+.next-grid {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    align-items: center;
+    -o-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -khtml-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    background-color: transparent;
+}
+.next-link p {
+    font-weight: 300;
+}
+
+
+
+.next-grid i {
+    font-size: 2em;
+    transition: .3s linear;
+    color: #434343;
+    justify-self: end;}
+
+.intro .nextup {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  
+}
+.intro .nextup:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #16B3C3;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+          -o-transition: all 0.3s linear;
+    -moz-transition: all 0.2s linear;
+    -khtml-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+.intro .nextup:hover .next-link{
+  color: white;
+}
+.intro .nextup:hover .next-link i{
+  color: white;
+}
+.intro .nextup:hover:before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+
 
 .grid-item:hover .title{
     opacity: 1;
@@ -490,12 +599,38 @@ color: var(--accent);
 
 
 
+@media only screen and (max-width: 39.9999em) {
 
+
+    footer p{
+        text-align:center;
+    }
+    .footer-nav {
+        display:grid;
+        grid-template-columns: 1fr;
+        height: 20px;
+        justify-items: center;
+        grid-gap: 20px;
+        text-align:center;
+    }
+    footer .right-list {
+        float: none;
+        text-align: center;
+    }
+    footer .right-list .nav__menu {
+        margin: 0;
+    }
+    footer .left-list {
+        float: none;
+        text-align: center;
+    }
+}
 
 
 
 
 @media only screen and (max-width: 47em) {
+    
     .resume-grid {
         grid-template-columns: 1fr;
     }
@@ -629,6 +764,11 @@ max-width: 70%;
           margin-left: 2.5rem;
           margin-right: 2.5rem;
       }
+      .footerWrap {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+      
       .container {
           margin-top: 5.9375rem;
 
@@ -661,7 +801,7 @@ max-width: 55%;
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
-        color: rgb(37, 37, 37);
+        color: #434343;
         background-color: rgb(247, 249, 255);
     }
     .caption p {
@@ -673,9 +813,7 @@ max-width: 55%;
 .section span {
     font-weight: 500;
 }
-.section {
-    background-color: rgba(255, 255, 255, 0.479);
-}
+
 .section h3,h4 {
     font-family: 'Palanquin', sans-serif;
     font-weight: 400;
@@ -712,13 +850,4 @@ max-width: 55%;
 
   .work {
       padding-top: 2.5em;
-  }
-  footer {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    color: rgb(37, 37, 37);
-    background-color: rgb(247, 249, 255);
-  }
-  footer p {
-      text-align: center;
   }

@@ -10,14 +10,7 @@
 <script src="https://kit.fontawesome.com/61660ed236.js"></script>
 <link rel="stylesheet" href="./css/style.css">
 </head>
-<style>
 
-.indented {
-    margin-left: 20px;
-}
-
-
-</style>
 <body id="fixed">
         <nav id="mySidenav" class="sidenav">
             <div class="header__inner">
@@ -54,34 +47,43 @@
     <div class="container">
         <div class="intro section">
             <h2>My Story</h2>
-            <p>Today I'm a ux designer passionate about researching and creating accessible solutions for hardware and physical products. <span>I actually started my journey in Mechanical Engineering</span>. I thought engineering was a good fit for two reasons: 
-                <br>
-                <br>
-                    <p class="indented"><span>1.</span> My Dad is a successful engineer.</p>
-                    <p class="indented"><span>2.</span> I played with legos as a kid. </p>
+            <p>Today, I’m a UX designer passionate about researching and creating accessible solutions for hardware and physical products. <span>I actually started my journey in mechanical engineering. </span>
                 </p>
+                <br>
+                <p>From a young age, I liked getting my hands dirty with whatever I was working on; legos to mud pies, I wanted to build things. Years later, it only made sense to study mechanical engineering. </p>
+
                 <div class="image-section">
-                    <img src="./img/dadandi.jpg" alt="My Dad and I, covered in car grease, holding cans of Mountain Dew">
+                                    <!-- Place <div> tag where you want the feed to appear -->
+<div aria-hidden=”true” id="curator-feed-bronco-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag"></a></div>
                     <div class="caption">
-                        <p>My Dad and I after finishing re-wiring my 1979 Ford Bronco.</p>
+                        <p>I restored a 1979 Ford Bronco. <a href="">Check it out on instagram!</a></p>
                     </div>
                 </div>
                 <p>
-                After four semesters and two internships I decided that Mechanical Engineering was not the right fit for me.  <span>I was more inspired by the story behind a product, and the design, rather than maximizing efficiency or lowering manufacturing costs.</span></p>
+                        Mechanical engineering gave me great opportunities like two internships at Whirlpool where I designed a patented solution for top-load washing machines. I enjoyed the experience of being able to engage with the development of a product. </p>
+                        <div class="image-section">
+                                <img src="./img/projects/patent2.jpg" alt="Sketch of a washing machine from a patent">
+                                <div class="caption">
+                                    <p>Dual wall system that increased capacity in top-load washing machines. Awarded Patent US20170030000AI.  <a href="https://patents.google.com/patent/US10179963B2/en?inventor=bohenick&oq=bohenick">Read patent</a></p>
+                                </div>
+                            </div>
+                <p>
+                        When I returned to classes in the fall, the ME major focused on maximizing theoretical efficiencies and lowering manufacturing costs, and those didn’t capture my interests. Instead, I became enthralled in the story behind a product. That’s when I began to learn about UX.
+                </p>
                 <div class="image-section">
                         <img src="./img/presentation.jpg" alt="Me holding the microphone on stage with three teammates presenting our Helping Home application mockups">
                         <div class="caption">
                             <p>Presenting mockups for Helping Home application with my Teach Access team.</p>
                         </div>
                     </div>
-                <p>As soon as I started pursuing a degree in UX, I fell in love with the incredible influence a human-centered approach has on improving every aspect of a product.  More importanly, <span>I learned about accessiblity, usability and how rewarding and meaningful a career in Accessiblity can be.</span></p>
+                <p>UX design is an amazing platform that allows you to provide meaningful and relevant experiences to users. Once I started pursuing a degree in UX, I fell in love with the incredible influence a human-centered approach has on improving every aspect of a product. <span>I learned about accessibility, usability, and how meaningful a career in accessibility can be.</span></p>
                 <div class="image-section">
                         <img src="./img/VR.jpg" alt="Me trying out the Magic Leap's One at the 2019 XR Symposium">
                         <div class="caption">
                             <p>Trying out the Magic Leap One at the 2019 XR Symposium</p>
                         </div>
                     </div>
-                <p>Today I do my best to approach problems with <span>curiosity, empathy, and a supportive attitude</span>.  I also work well within cross-functional teams thanks to my wide range of experience and interests!</p>
+                <p>Today, I still get my hands dirty. Just instead of working with mud pies and combustion engines, I incorporate my varied experience to solve accessibility problems. <span>I live to be curious, empathetic, and supportive.</span> On cross-functional teams, I strive to empower others so there are no limits what we can accomplish together!</p>
                 
 
         </div>
@@ -94,7 +96,28 @@
 
 
 
-    <footer><p>&#169;    Zach Bohenick 2019</p></footer>
+    <footer>
+        <div class="footerWrap">
+        <p>303 903 9488</p>
+        <p>zbohenick <span>@</span> gmail <span>.</span> com</p>
+        <div class="footer-nav">
+            <ul class="left-list">
+                <li aria-label="Link to my LinkedIn" class="nav__item--icon"><a href="https://www.linkedin.com/in/zach-bohenick/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li aria-label="Link to my Facebook" class="nav__item--icon"><a href="https://www.facebook.com/zach.bohenick"><i class="fab fa-facebook-f"></i></a></li>
+                <li aria-label="Link to my Instagram" class="nav__item--icon"><a href="https://www.instagram.com/zachbohenick/"><i class="fab fa-instagram"></i></a></li>
+                <li aria-label="Link to send me an email" class="nav__item--icon"><a href="mailto:zbohenick@gmail.com"><i class="far fa-envelope"></i></a></li>
+            </ul>
+            <ul class="right-list">
+                    <li class="nav__item"><a href="index.html">Home</a></li>
+                    <li class="nav__item"><a href="resume.html">Resume</a></li>
+                    <li class="nav__item"><a href="about.html">About</a></li>
+                    <li class="nav__menu"> <p>&#169;    Zach Bohenick 2019</p></li>
+            </ul>
+
+        </div>
+
+    </div>
+    </footer>
 </main>
 
 <script>
@@ -134,7 +157,15 @@ function closeNav() {
     document.getElementById("opennav").focus();
 }
 </script>
-
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript">
+    /* curator-feed-bronco-layout */
+    (function(){
+    var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+    i.src = "https://cdn.curator.io/published/029b1e55-9b66-45c7-9d37-195fb8b05fba.js";
+    e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+    })();
+    </script>
 
 </body>
 </html>
