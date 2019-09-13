@@ -410,9 +410,7 @@ color: var(--accent);
   .right-col .resume-content{
       padding-left: 50px;
   }
-  .right-col h3 {
-      margin-left: -50px;
-  }
+
 .date {
     font-size: .875rem;
     margin-top: -15px;
