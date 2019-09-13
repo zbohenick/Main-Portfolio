@@ -185,15 +185,16 @@
 
 
 
+    <footer><p>&#169;    Zach Bohenick 2019</p></footer>
 </main>
-<footer><p>&#169;    Zach Bohenick 2019</p></footer>
+
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
-    document.getElementById("fixed").style.marginLeft = "0";
+    document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     document.getElementById("mySidenav").style.visibility = "visible";
-    document.getElementById("fixed").style.height = "100vh";
+    document.getElementById("main").style.display = "none";
     document.getElementById("main").setAttribute('aria-hidden','true');
     var mainLinks = document.getElementById("main").getElementsByTagName("a");
     for (var i = 0; i < mainLinks.length; i++) {
@@ -208,12 +209,12 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("fixed").style.marginLeft= "100%";
+    document.getElementById("main").style.marginLeft= "0";
     document.body.style.backgroundColor = "white";
     document.getElementById("mySidenav").style.visibility = "hidden";
     document.getElementById("main").removeAttribute('aria-hidden');
     var mainLinks = document.getElementById("main").getElementsByTagName("a");
-    document.getElementById("fixed").style.height = "100vh";
+    document.getElementById("main").style.display = "block";
     for (var i = 0; i < mainLinks.length; i++) {
       mainLinks[i].removeAttribute('tabindex');
     }
