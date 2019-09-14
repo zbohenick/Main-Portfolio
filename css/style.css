@@ -61,6 +61,7 @@
          -moz-user-select: none;
           -ms-user-select: none;
   }
+
   .image-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -602,7 +603,9 @@ color: var(--accent);
 
 @media only screen and (max-width: 39.9999em) {
 
-
+    .footerWrap h4 {
+        text-align: center;
+    }
     footer p{
         text-align:center;
     }
