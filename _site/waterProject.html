@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Zach Bohenick</title>
+<meta name="description" content="I am a user experience designer located in East Lansing, Michigan. I have experience as a Mechanical Engineer where I designed and fabricated prototypes. Today, I am passionate about using ux research methods to implement accessible solutions for hardware and physical products.">	
+<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700|Palanquin:300,500,700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./img/favicon.png">
+<script src="https://kit.fontawesome.com/61660ed236.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+        :root {
+            --accent: #3772FF;
+            --other: rgb(197, 197, 197);
+            --pageaccent: #16B3C3;
+          }
+        
+        .hero-banner {
+            height: 20em;
+            background-image: url('./img/whbanner.png');
+            background-position: center;
+            background-size: cover;
+        }
+        .intro .nextup:before {
+            background-color: #C3C3C5;
+
+        }
+        .intro .nextup:hover .next-link{
+        color: #434343;
+        }
+        .intro .nextup:hover .next-link i{
+        color: #434343;
+        }
+        
+        </style>
+<body id="fixed">
+        <nav id="mySidenav" class="sidenav">
+            <div class="header__inner">
+                <button id="closenav" class="closebtn" onclick="closeNav()"aria-label="Close the Menu" aria-expanded="false"><i class="fas fa-times" aria-hidden=”true”></i>Close</button>
+            </div>
+            <div class="sidenavLinks">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </nav>
+
+
+<main id="main">
+    
+    <header>
+        <div class="header__inner">
+
+            <nav id="myMainnav" class="mainnav">
+                <ul class="left-list">
+                    <li class="nav__item"><a href="index.html">Home</a></li>
+                </ul>
+                <ul class="right-list">
+                    <li class="nav__item"><a href="resume.html">Resume</a></li>
+                    <li class="nav__item"><a href="about.html">About</a></li>
+                    <li class="nav__menu">  <button class= "nav__item--menuButton"id="opennav" onclick="openNav()" aria-label="Open the Menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden=”true”></i>Menu</button></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero-banner">
+              
+        </div>
+        
+        <div class="intro section work">
+
+            <h1>Watering Hole</h1>
+            <h2>Transforming the way we think about public drinking fountains</h2>
+            <h3>Summary</h3>
+            <p>As a witness to the devastating effects of the Flint Water Crisis, I designed an application to easily report water quality on our campus. I believe this solution has the power to inspire a community to be passionate about the safety and quality of public drinking water.</p>
+            <div class="details">
+                    <p class="detail"> <mark>Role:</mark> UX/UI Designer</p>
+   <p class="detail"> <mark>Duration:</mark> 3 Months</p>
+   <p class="detail"> <mark>Tools:</mark> Figma, Sketch, Pop App</p>   
+   </div>
+                <hr>
+            <h4>The challenge</h4>
+            <ul>
+                <li>Reducing public stigma around public drinking fountains.</li>
+                <li>Making it easy for the community to find safe drinking water.</li>
+                <li>Keeping students and faculty safe from drinking harmful pollutants.</li>
+            </ul>
+            <h4>The approach</h4>
+            <ul>
+                <li>Gaining a holistic understanding of public drinking water systems.</li>
+                <li>Creating a way for users to effortlessly report water quality.</li>
+            </ul>
+            <hr>
+            <h3>Taking student safety seriously</h3>
+                <p>
+                     After some preliminary research, I learned the dangers of toxins like lead and bacterial threats like e coli. These pollutants can leave students at serious risk, especially at public drinking fountains. To ensure the public’s safety, I decided to design the application in a way that allows users to report any drinking fountain on campus.</p> <br>
+                    <p>The low fidelity designs were tested using the Pop app. A user could access a map of campus or view individual floors of buildings. Using the application, a user could view whether a fountain was safe to drink from. The status of a drinking fountain would be determined by user input and reports from the local water treatment facility.</p>
+                <div class="image-section">
+                    <div class="image-grid">
+                        <img src="./img/projects/sketchmenu.PNG"alt="Lowfidelity mockup map view with locations of drinking fountains in different buildings.">
+                        <img src="./img/projects/sketch3.PNG"alt="Fountain view with general information, tests, and reviews">
+                        <img src="./img/projects/sketchmap.PNG"alt="Floor view of fountains on a spacific floor.">
+                    </div>
+                    <div class="image-grid">
+                            <img src="./img/projects/sketch5.PNG"alt="QR code scanning feature to review or test a fountain.">
+                            <img src="./img/projects/sketch6.PNG"alt="Test view with options to select type of test, write a description, and provide an image.">
+                            <img src="./img/projects/sketch4.PNG"alt="Alerts view with an example of an alert, and a resolved alert below.">
+                        </div>
+
+                    </div>
+                    <h3>First iteration after further research</h3>
+                    <p>
+                            While testing the prototype, I recognized that the app was both too complex and redundant. The water treatment facility personnel informed me that two fountains in the same building would not vary in safety. I decided to apply this information to my designs.</p> <br>
+                        <p>Instead of reviewing every drinking fountain in a building, I changed the goal of the application to review just one fountain in each building. This decision made the app much less complex. I removed the need for a map and reduced a lot of unnecessary content. I started playing with ways to simplify user testing in this second version.</p>
+                        <div class="image-section">
+                                <div class="image-grid">
+                                    <img src="./img/projects/lofi1.png"alt="Refined view of buildings with icons for taste, smell, and visual appearance">
+                                    <img src="./img/projects/lofi2.png"alt="view of a simplified test asking if the water tastes good or bad.">
+                                    <img src="./img/projects/lofi3.png"alt="Options to review specifically how the water tasted (metallic, fishy, salty, chlorine)">
+                                </div>
+                                    <div class="caption">
+                                        <p>
+                                            Mockups for refined design and simplified, guided reporting.
+            
+                                        </p>
+                                    </div>
+                                </div>
+                        <h3>Final deliverable</h3>
+                        <p>
+                                The final design provides the user with useful data about drinking fountains on campus. After some further research, I finalized the necessary information users would need to report for the local water treatment facility. This data would also be provided to the local water treatment facility, allowing their team to diagnose any problems much easier.</p> 
+                        <div class="image-section">
+                                <img src="./img/projects/phones.png"alt="Two phone views of final mockup. Phone on the left has information about the fountain and a report button. On the right is the discover page with a list of best fountains, common reports, and recent news.">
+                            </div>
+
+
+                            <div class="nextup">
+
+                    
+                                    <a class= "next-link" href="./omaProject.html">
+                                        <div class="next-grid">
+                
+                                            <div class="next-text">
+                                                <h3>Next up...</h3>
+                                                <p>Improving community engagement in the Greater Lansing Area</p>                         
+                                            </div>
+                                           <i class="fas fa-chevron-right next-arrow"></i>
+                                        </div>
+                                    </a>
+                                </div>
+        </div>
+        
+
+        </div>
+
+
+
+
+
+
+
+    <footer>
+            <div class="footerWrap">
+                        <h4>Let's talk!</h4>
+            <p><script type="text/javascript">
+                            phone1 = "303";
+                            phone2 = "903"
+                            phone3 = "9488"
+                            document.write('<a href=\"tel:' + phone1 + phone2 + phone3 + '\">' + 
+                                        '(' + phone1 + ') ' + phone2 + ' - ' + phone3 + '</a>');
+                            // End -->
+                            </script></p>
+           <p><script type="text/javascript">
+                user = "zbohenick";
+                domain = "gmail.com";
+                document.write('<a href=\"mailto:' + user + '@' + domain + '\">' + 
+                            user + '@' + domain + '</a>');
+                // End -->
+                </script>
+                </p> 
+            <div class="footer-nav">
+                <ul class="left-list">
+                    <li class="nav__item--icon"><a aria-label="Link to my LinkedIn" href="https://www.linkedin.com/in/zach-bohenick/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="nav__item--icon"><a aria-label="Link to my Facebook" href="https://www.facebook.com/zach.bohenick"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="nav__item--icon"><a aria-label="Link to my Instagram" href="https://www.instagram.com/zachbohenick/"><i class="fab fa-instagram"></i></a></li>
+                    <li class="nav__item--icon"><a aria-label="Link to send me an email" href="mailto:zbohenick@gmail.com"><i class="far fa-envelope"></i></a></li>
+                </ul>
+                <ul class="right-list">
+                        <li class="nav__item"><a href="index.html">Home</a></li>
+                        <li class="nav__item"><a href="resume.html">Resume</a></li>
+                        <li class="nav__item"><a href="about.html">About</a></li>
+                        <li class="nav__menu"> <p>&#169;    Zach Bohenick 2019</p></li>
+                </ul>
+    
+            </div>
+    
+        </div>
+        </footer>
+</main>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.getElementById("mySidenav").style.visibility = "visible";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("main").setAttribute('aria-hidden','true');
+    var mainLinks = document.getElementById("main").getElementsByTagName("a");
+    for (var i = 0; i < mainLinks.length; i++) {
+      mainLinks[i].setAttribute('tabindex', '-1');
+    }
+    var mainButtons = document.getElementById("main").getElementsByTagName("button");
+    for (var i = 0; i < mainButtons.length; i++) {
+      mainButtons[i].setAttribute('disabled', 'true');
+    }
+    setTimeout(function(){ document.getElementById("closenav").focus(); }, 500);
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+    document.getElementById("mySidenav").style.visibility = "hidden";
+    document.getElementById("main").removeAttribute('aria-hidden');
+    var mainLinks = document.getElementById("main").getElementsByTagName("a");
+    document.getElementById("main").style.display = "block";
+    for (var i = 0; i < mainLinks.length; i++) {
+      mainLinks[i].removeAttribute('tabindex');
+    }
+    var mainButtons = document.getElementById("main").getElementsByTagName("button");
+    for (var i = 0; i < mainButtons.length; i++) {
+      mainButtons[i].removeAttribute('disabled');
+    }
+    document.getElementById("opennav").focus();
+}
+</script>
+
+
+</body>
+</html>

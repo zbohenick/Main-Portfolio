@@ -1,7 +1,8 @@
 :root {
-    --accent: #3772FF;
+    --accent: #21BFEC;
     --other: rgb(197, 197, 197);
     --pageaccent: #BD202C;
+    --text: #2F3340;
   }
   * { 
       -moz-box-sizing: border-box; 
@@ -17,11 +18,12 @@
       font-size: 1.125rem;
       font-weight: 300;
       line-height: 2;
-      font-family: 'Palanquin', sans-serif;
-      color: #434343;
+      font-family: 'Montserrat', sans-serif;
+      color: #2F3340;
+      background-color: #F7F9FB;
   }
   h1,h2,h3,h4,h5 {
-      font-family: 'Palanquin Dark', sans-serif;
+    font-family: 'Montserrat', sans-serif;
       line-height: 1;
       
   }
@@ -91,7 +93,7 @@
       left:center;
       max-width: 90em;
       height: 3.875rem;
-      background-color: white;
+      background-color: #F7F9FB;
   }
   .header__inner {
       height: 3.875rem;
@@ -99,17 +101,22 @@
       padding-bottom: 1.25rem;
       margin-left: 1.25rem;
       margin-right: 1.25rem;
-      background-color:white;
+      background-color:#F7F9FB;
   }
   .footerWrap {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 
+  .footerWrap a{
+    color:#F7F9FB;
+
+  }
+
   a {
   
       text-decoration: none;
-      color: #434343;
+      color: var(--text);
   }
   
   .nav__item a:before {
@@ -156,7 +163,7 @@
   
   mark { 
     background-color: transparent;
-    color: black;
+    color: var(--text);
     font-weight: 500;
   }
   .detail {
@@ -178,17 +185,17 @@ footer .nav__item--icon {
 }
 footer .nav__item--icon i {
     transition: .3s;
-    color: #434343;
+    color: #F7F9FB;
 }
 footer .nav__item--icon:hover i{
     color: var(--accent);
 }
 footer .right-list li{
-    color: #434343;
+    color: #F7F9FB;
     font-weight: 400;
 }
 footer .nav__item a {
-    color: #434343;
+    color: #F7F9FB;
     font-weight: 400;
 }
 footer .nav__item--icon:nth-child(1) {
@@ -197,15 +204,17 @@ footer .nav__item--icon:nth-child(1) {
 footer {
     padding-top: 3em;
     padding-bottom: 5em;
-    color: #434343;
-    background-color: rgb(247, 249, 255);
+    background-color: #2F3340;
+    color: #F7F9FB;
   }
   footer p {
       text-align: left;
+      color: #F7F9FB;
   }
   .footer-nav {
       padding-top: 3em;
   }
+
 
   
   
@@ -218,7 +227,7 @@ footer {
       z-index: 8;
       top: 0;
       left: 0;
-      background-color: white;
+      background-color: #F7F9FB;
       background-size: 200%;
       background-position: center;
       overflow-x: hidden;
@@ -234,10 +243,10 @@ footer {
   
   .sidenav a, .sidenav button {
       text-decoration: none;
-      color: #434343;
+      color: var(--text);
       display: block;
       width: auto;
-      font-family: 'Palanquin Dark', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 700;
   }
   
@@ -294,7 +303,7 @@ max-width: 90%;
 text-align: center;
 }
 .intro h2 {
-font-weight: 500;
+font-weight: 700;
 }
 .intro a {
 font-weight: 700;
@@ -337,7 +346,7 @@ color: var(--accent);
     -ms-transition: all 0.2s linear;
     transition: all 0.2s linear;
     background-color: rgb(0, 0, 0, 0.2);
-    color: white;
+    color: #F7F9FB;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -351,10 +360,10 @@ color: var(--accent);
 }
 
 .intro .next-link:hover {
-    color:black;
+    color: var(--text);
   }
   .intro .next-link {
-      color: #434343;
+    color: var(--text);
   }
 
 .next-grid {
@@ -377,7 +386,7 @@ color: var(--accent);
 .next-grid i {
     font-size: 2em;
     transition: .3s linear;
-    color: #434343;
+    color: var(--text);
     justify-self: end;}
 
 .intro .nextup {
@@ -403,10 +412,10 @@ color: var(--accent);
     -webkit-transition: all 0.2s linear;
 }
 .intro .nextup:hover .next-link{
-  color: white;
+  color: #F7F9FB;
 }
 .intro .nextup:hover .next-link i{
-  color: white;
+  color: #F7F9FB;
 }
 .intro .nextup:hover:before {
   -webkit-transform: translateX(0);
@@ -450,72 +459,50 @@ color: var(--accent);
     padding-top: 5em;
     padding-bottom: 5em;
 }
-.resume-grid {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 20px;
-}
+
 .resume h3, h4, h5 {
-    font-family: 'Palanquin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 .resume h3 {
-    font-weight: 300;
-    letter-spacing: 1rem;
+    font-weight: 800;
+    letter-spacing: .6rem;
     font-size: 1.5rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 .resume h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 15px;
-    font-family: 'Palanquin', sans-serif;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     padding-top: 1.25em;
-    padding-bottom: 1.25em;
 }
-.resume h2 span {
-    color: var(--accent);
-}
+
 .subheading {
+    padding-bottom: 20px;
     margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 3fr 2fr 1fr 2fr 3fr;
-    border-top: 2px solid var(--other);
-    border-bottom: 2px solid var(--other);
+    border-top: 1px solid var(--other);
+    border-bottom: 1px solid var(--other);
     justify-items: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
 
 }
-.subheading p:nth-child(1) {
-    justify-self: end;
-}
-.subheading p:nth-child(5) {
-    justify-self: start;
-}
-.subheading p:nth-child(2) {
-    color: var(--other);
+
+.name-tag{
+    text-align:center;
+    width: 100%;
+    letter-spacing: .7rem;
+    padding-bottom: 1.25em;
+
 }
 
 .resume-grid h4,li {
     position: relative;
   }
-  .resume-grid h4 {
-    margin-bottom: .625rem;
-    line-height: 1.5;
-  }
-  .resume-grid h4::before {
-    position: absolute;
-    top: -69px;
-    font-size: 78px;
-    content: ".";
-    color: var(--accent);
-    font-weight: 700;
-    display: inline-block;
-    width: 1em;
-    margin-left: -57.5px;
-  }
+
+
 
   .resume-grid li {
     margin-bottom: .625rem;
@@ -527,7 +514,7 @@ color: var(--accent);
     top: -18px;
     font-size: 30px;
     content: ".";
-    color: var(--accent);
+    color: var(--text);
     font-weight: 700;
     display: inline-block;
     width: 1em;
@@ -540,10 +527,13 @@ color: var(--accent);
 .date {
     font-size: .875rem;
     margin-top: -15px;
+    text-transform: uppercase;
 }
-.resume-grid h4{
-    margin-top: 1.25rem;
+
+.resume-grid .date {
+    padding-bottom: 1.25rem;
 }
+
 .resume-content p {
     line-height: 1.5;
 }
@@ -600,7 +590,7 @@ color: var(--accent);
 
 
   .work h2{
-    font-family: 'Palanquin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 6em;
     line-height: 1.25;
     font-size: .875rem;
@@ -702,7 +692,7 @@ color: var(--accent);
 }
   @media only screen and (min-width: 40em) {
     .work h2{
-        font-family: 'Palanquin', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 6em;
         line-height: 1.25;
         font-size: .875rem;
@@ -728,7 +718,7 @@ color: var(--accent);
       }
       header {
           position:absolute;
-          background-color: white;
+          background-color: #F7F9FB;
           height: 5.625rem;
       }
       .header__inner {
@@ -767,7 +757,7 @@ max-width: 70%;
   }
   @media only screen and (min-width: 64em) {
     .work h2{
-        font-family: 'Palanquin', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 6em;
         line-height: 1.25;
         font-size: 1rem;
@@ -781,7 +771,7 @@ max-width: 70%;
       }
       header {
           position:absolute;
-          background-color: white;
+          background-color: #F7F9FB;
           height: 5.9375rem;
       }
       .nav__item, .nav__menu, .nav__item--close {
@@ -831,8 +821,8 @@ max-width: 55%;
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
-        color: #434343;
-        background-color: rgb(247, 249, 255);
+        color: var(--text);
+        border: 1px dotted var(--text);;
     }
     .caption p {
         text-align: center;
@@ -845,8 +835,7 @@ max-width: 55%;
 }
 
 .section h3,h4 {
-    font-family: 'Palanquin', sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;

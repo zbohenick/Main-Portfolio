@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Zach Bohenick</title>
+<meta name="description" content="I am a user experience designer located in East Lansing, Michigan. I have experience as a Mechanical Engineer where I designed and fabricated prototypes. Today, I am passionate about using UX research methods to implement accessible solutions for hardware and physical products.">	
+<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700|Palanquin:300,500,700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./img/favicon.png">
+<script src="https://kit.fontawesome.com/61660ed236.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+        :root {
+            --accent: #3772FF;
+            --other: rgb(197, 197, 197);
+            --pageaccent: #C3C3C5;
+          }
+        
+        .hero-banner {
+            height: 20em;
+            background-image: url('./img/omabanner.png');
+            background-position: center;
+            background-size: cover;
+        }
+        .image-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+        .intro .nextup:before {
+            background-color: #511B5E;
+
+        }
+        
+        </style>
+<body id="fixed">
+        <nav id="mySidenav" class="sidenav">
+            <div class="header__inner">
+                <button id="closenav" class="closebtn" onclick="closeNav()"aria-label="Close the Menu" aria-expanded="false"><i class="fas fa-times" aria-hidden=”true”></i>Close</button>
+            </div>
+            <div class="sidenavLinks">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </nav>
+
+
+<main id="main">
+    
+    <header>
+        <div class="header__inner">
+    
+            <nav id="myMainnav" class="mainnav">
+                <ul class="left-list">
+                    <li class="nav__item"><a href="index.html">Home</a></li>
+                </ul>
+                <ul class="right-list">
+                    <li class="nav__item"><a href="resume.html">Resume</a></li>
+                    <li class="nav__item"><a href="about.html">About</a></li>
+                    <li class="nav__menu">  <button class= "nav__item--menuButton"id="opennav" onclick="openNav()" aria-label="Open the Menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden=”true”></i>Menu</button></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero-banner">
+              
+        </div>
+        
+        <div class="intro section work">
+
+            <h1>Our Michigan Avenue</h1>
+            <h2>Improving community engagement in the Greater Lansing Area</h2>
+            <h3>Summary</h3>
+            <p>Our solutions improved the content management, organization, design, community engagement, and user experience on the Our Michigan Avenue website.</p>
+            <div class="details">
+                    <p class="detail"> <mark>Role:</mark> Front-End Develper, UX Designer</p>
+   <p class="detail"> <mark>Duration:</mark> 3 Months</p>
+   <p class="detail"> <mark>Tools:</mark> Sketch, Figma, Ruby on Rails, jQuery, AJAX, HTML/CSS</p>   
+   </div>
+                <hr>
+            <h4>The challenge</h4>
+            <ul>
+                <li>Improving content management on the site by reducing clutter.</li>
+                <li>Providing features that allow the community to share ideas and opinions.</li>
+                <li>Learning Ruby on Rails, rails gems, and scss styling.</li>
+            </ul>
+            <h4>Our approach</h4>
+            <ul>
+                <li>Researching the needs of students, young professional business owners, and government officials by conducting interviews and creating user stories.</li>
+                <li>Practicing cross-functional team leadership, agile development, and test-driven development.</li>
+                <li>Design, test, and develop at least two useful features with Ruby on Rails and Javascript.</li>
+            </ul>
+            <hr>
+            <h3>About Our Michigan Avenue</h3>
+                <p>
+                        The Our Michigan Avenue project is led by Professor John Monberg at Michigan State University. He is backed by over 50 stakeholders in the Greater Lansing Area, passionate about improving the community through collaboration and community input. Of the 30 students working on this project, I led a cross-functional team of UX designers, UI designers, and professional writing majors.</p> <br>
+
+                    <h3>Gathering research, sketching ideas</h3>
+                    <div class="image-section">
+                            <div class="image-grid">
+                                <img src="./img/projects/sketch1.png" alt="Dry erase board with concept sketches">
+                                <img src="./img/projects/sketch2.png" alt="Dry erase board with more concept sketches">
+        
+                            </div>
+                                <div class="caption">
+                                    <p>
+                                       Sketches after a brainstorm session. 
+        
+                                    </p>
+                                </div>
+                            </div>
+                            <p>Our team conducted a total of 4 interviews with government officials to learn more about what information is most useful from the public. We learned that it is valuable to gather opinions on infrastructure projects in the form of voting and civil discussion. From here, we created user scenarios. We applied our research to some brainstorming sessions and sketched out some low fidelity wireframes.</p>
+                            <div class="image-section">
+                                <img src="./img/projects/omaUser.png" alt="Two user stories. The first: In my role as a government official, I'd like a comments forum below each project to communicate with the public. The second: In my role as a goverment decision maker, I would like a voting system and a favorite counter for projects to learn what the public cares about.">
+                                        <div class="caption">
+                                            <p>
+                                                These user stories helped our team design two additions to the site.
+                
+                                            </p>
+                                        </div>
+                                    </div>
+                        <h3>Finalizing our design</h3>
+                        <p>
+                                I designed the user experience of the features and helped with the user interface design. Our high-fidelity mockup helped organize content on the pages and reduce clutter. The voting feature allows community members to voice their opinion on local projects. We also added a comments section to the website using disqus. Finally, I coded our features in Ruby on Rails using Bootstrap for modals and javascript for no-refresh voting functionality.</p> 
+                        <div class="image-section">
+                                <img src="./img/projects/oma1.png"alt="First view of mockup featuring projects and developments in Greater Lansing to explore.">
+                                <img src="./img/projects/oma2.png"alt="A project, SkyVue Development, opened showing possible imporovements. ">
+                                <img src="./img/projects/oma3.png"alt="An improvement opened with a description and voting option">
+                            </div>
+
+                            <div class="nextup">
+
+                    
+                                    <a class= "next-link" href="./hhProject.html">
+                                        <div class="next-grid">
+                
+                                            <div class="next-text">
+                                                <h3>Next up...</h3>
+                                                <p>Using Smart Home Technology to Improve the Lives of Caregivers</p>                         
+                                            </div>
+                                           <i class="fas fa-chevron-right next-arrow"></i>
+                                        </div>
+                                    </a>
+                                </div>
+
+        </div>
+        
+        </div>
+
+
+
+
+
+
+
+    <footer>
+            <div class="footerWrap">
+                        <h4>Let's talk!</h4>
+            <p><script type="text/javascript">
+                            phone1 = "303";
+                            phone2 = "903"
+                            phone3 = "9488"
+                            document.write('<a href=\"tel:' + phone1 + phone2 + phone3 + '\">' + 
+                                        '(' + phone1 + ') ' + phone2 + ' - ' + phone3 + '</a>');
+                            // End -->
+                            </script></p>
+           <p><script type="text/javascript">
+                user = "zbohenick";
+                domain = "gmail.com";
+                document.write('<a href=\"mailto:' + user + '@' + domain + '\">' + 
+                            user + '@' + domain + '</a>');
+                // End -->
+                </script>
+                </p> 
+            <div class="footer-nav">
+                <ul class="left-list">
+                    <li class="nav__item--icon"><a aria-label="Link to my LinkedIn" href="https://www.linkedin.com/in/zach-bohenick/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="nav__item--icon"><a aria-label="Link to my Facebook" href="https://www.facebook.com/zach.bohenick"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="nav__item--icon"><a aria-label="Link to my Instagram" href="https://www.instagram.com/zachbohenick/"><i class="fab fa-instagram"></i></a></li>
+                    <li class="nav__item--icon"><a aria-label="Link to send me an email" href="mailto:zbohenick@gmail.com"><i class="far fa-envelope"></i></a></li>
+                </ul>
+                <ul class="right-list">
+                        <li class="nav__item"><a href="index.html">Home</a></li>
+                        <li class="nav__item"><a href="resume.html">Resume</a></li>
+                        <li class="nav__item"><a href="about.html">About</a></li>
+                        <li class="nav__menu"> <p>&#169;    Zach Bohenick 2019</p></li>
+                </ul>
+    
+            </div>
+    
+        </div>
+        </footer>
+</main>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.getElementById("mySidenav").style.visibility = "visible";
+    document.getElementById("main").style.display = "none";
+    document.getElementById("main").setAttribute('aria-hidden','true');
+    var mainLinks = document.getElementById("main").getElementsByTagName("a");
+    for (var i = 0; i < mainLinks.length; i++) {
+      mainLinks[i].setAttribute('tabindex', '-1');
+    }
+    var mainButtons = document.getElementById("main").getElementsByTagName("button");
+    for (var i = 0; i < mainButtons.length; i++) {
+      mainButtons[i].setAttribute('disabled', 'true');
+    }
+    setTimeout(function(){ document.getElementById("closenav").focus(); }, 500);
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+    document.getElementById("mySidenav").style.visibility = "hidden";
+    document.getElementById("main").removeAttribute('aria-hidden');
+    var mainLinks = document.getElementById("main").getElementsByTagName("a");
+    document.getElementById("main").style.display = "block";
+    for (var i = 0; i < mainLinks.length; i++) {
+      mainLinks[i].removeAttribute('tabindex');
+    }
+    var mainButtons = document.getElementById("main").getElementsByTagName("button");
+    for (var i = 0; i < mainButtons.length; i++) {
+      mainButtons[i].removeAttribute('disabled');
+    }
+    document.getElementById("opennav").focus();
+}
+</script>
+
+
+</body>
+</html>
