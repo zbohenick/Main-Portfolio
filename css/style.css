@@ -587,23 +587,6 @@ color: var(--accent);
       text-align: left;
   }
   
-.top-banner {
-    height: 30px;
-    border-top: 2px dotted var(--text);
-    border-right: 2px dotted var(--text);
-    border-left: 2px dotted var(--text);
-
-}
-
-.bottom-banner {
-    margin-top: 50px;
-    height: 30px;
-    border-bottom: 2px dotted var(--text);
-    border-right: 2px dotted var(--text);
-    border-left: 2px dotted var(--text);
-
-}
-
   .work h2{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 6em;
